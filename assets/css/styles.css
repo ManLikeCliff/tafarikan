@@ -1,13 +1,9 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap');
-  @font-face {
-    font-family: logoFont;
-    src: url(Circular-Book.woff);
-  }
-  @font-face {
-    font-family: headerFont;
+@font-face {
+    font-family: jelani;
     src: url(jelani.woff);
-  }
+}
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -170,7 +166,7 @@ input{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--first-color);
+    background-color: transparent;
 }
 
 /*==================== NAV ====================*/
@@ -247,13 +243,130 @@ input{
 
 
 /* Change background header */
+.scroll-header{
+    background-color: var(--body-color);
+    box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, .15);
+}
 
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle{
+    color: var(--title-color);
+}
 
 /*==================== HOME ====================*/
+.home__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 73%;
+}
 
+.home__container{
+    position: relative;
+    height: calc(100vh - var(--header-height));
+    align-content: center;
+    row-gap: 3rem;
+}
+
+.home__data-subtitle,
+.home__data-title,
+.home__social-link,
+.home__info{
+    color: var(--white-color);
+}
+
+.home__data-subtitle{
+    display: block;
+    font-family: jelani,sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: var(--mb-0-75);
+}
+
+.home__data-title{
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-2-5);
+}
+
+.home__social{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.home__social-link{
+    font-size: 1.2rem;
+    width: max-content;
+}
+
+.home__info{
+    background-color: var(--first-color);
+    display: flex;
+    padding: 1.5rem 1rem;
+    align-items: center;
+    column-gap: .5rem;
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    width: 228px;
+}
+
+.home__info-title{
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home__info-button{
+    font-size: var(--smaller-font-size);
+}
+
+.home__info-overlay{
+    overflow: var(--img-hidden);
+}
+
+.home__info-img{
+    width: 145px;
+    transition: var(--img-transition);
+}
+
+.home__info-img:hover{
+    transform: var(--img-scale);
+}
 
 /*==================== BUTTONS ====================*/
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    font-weight: var(--font-semi-bold);
+    transition: .3s;
+}
 
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button--flex{
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.button--link{
+    background: none;
+    padding: 0;
+}
+
+.button--link:hover{
+    background: none;
+}
 
 /*==================== ABOUT ====================*/
 
