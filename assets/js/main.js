@@ -51,7 +51,37 @@ var swiper = new Swiper(".discover__container", {
   });
 
 /*==================== VIDEO ====================*/
+const videoFile = document.getElementById('video-file'),
+      videoButton = document.getElementById('video-button'),
+      videoIcon = document.getElementById('video-icon')
 
+function playPause(){
+    if(videoFile.paused){
+        // Play video
+        videoFile.play()
+
+        // I want to change the icon
+        videoIcon.classList.add('ri-pause-line')
+        videoIcon.classList.remove('ri-play-line')
+    }else{
+        // Pause the video
+        videoFile.pause()
+
+        // I want to change the icon
+        videoIcon.classList.remove('ri-pause-line')
+        videoIcon.classList.add('ri-play-line')
+    }
+}
+
+videoButton.addEventListener('click', playPause)
+
+function finalVideo(){
+    // Video ends and icon changes
+    videoIcon.classList.remove('ri-pause-line')
+    videoIcon.classList.add('ri-play-line')
+}
+// ends where the video stops
+videoFile.addEventListener('ended', finalVideo)
 
 /*==================== SHOW SCROLL UP ====================*/ 
 
