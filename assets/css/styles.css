@@ -644,7 +644,21 @@ input{
 }
 
 /*==================== SPONSORS ====================*/
+.sponsor__container{
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    justify-content: center;
+    row-gap: 3.5rem;
+}
 
+.sponsor__img{
+    width: 90px;
+    filter: invert(.7);
+    transition: var(--img-transition);
+}
+
+.sponsor__content:hover .sponsor__img{
+    filter: invert(.5);
+}
 
 /*==================== FOOTER ====================*/
 
