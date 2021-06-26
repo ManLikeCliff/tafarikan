@@ -30,11 +30,12 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">Tafarika</a>
+        <img src="assets/img/logo.png" class="logo-png" alt="" style="margin-left: 0px;">
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
@@ -43,9 +44,15 @@
               <a href="#discover" class="nav__link">Discover</a>
             </li>
             <li class="nav__item">
-              <a href="#place" class="nav__link">Place</a>
+              <a href="#place" class="nav__link">Places</a>
             </li>
           </ul>
+
+          <div class="nav__dark">
+              <!-- Theme change button -->
+              <span class="change-theme-name">Dark mode</span>
+              <i class="ri-moon-line change-theme" id="theme-button"></i>
+          </div>
 
           <i class="ri-close-line nav__close" id="nav-close"></i>
         </div>
@@ -459,11 +466,9 @@
       <div class="footer__container container grid">
         <div class="footer__content grid">
           <div class="footer__data">
-            <h3 class="footer__title">Tafarika</h3>
+            <h3 class="footer__title">Tafarika<img src="assets/img/logo.png" class="logo-png" alt="" style="margin-left: 0px;"></h3>
             <p class="footer__description">
-              Experience the uncommon <br />
-              element, by exploring motherland <br />
-              in comfort.
+              ...exploring  motherland in comfort.
             </p>
 
             <div>
@@ -515,7 +520,7 @@
           </div>
 
           <div class="footer__data">
-            <h3 class="footer__subtitle">Sustainability Partners</h3>
+            <h3 class="footer__subtitle">Sustainability Works</h3>
 
             <ul>
               <li class="footer__item">
@@ -574,8 +579,7 @@
     </a>
 
     <!--==================== SCROLL REVEAL ====================-->
-
-    <!--==================== SCROLL REVEAL ====================-->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
