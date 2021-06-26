@@ -1,5 +1,5 @@
-# Tafarika Website 💜
-## [Explore Motherland Africa](https://tafarika.web.app)
+# Tafarikan Website 💜
+## [Explore Motherland Africa](https://tafarikan.web.app)
 
 - Tour website created using HTML, CSS & JAVASCRIPT.
 - Contains animations when scrolling.
@@ -7,4 +7,4 @@
 - Developed first with the Mobile First methodology, then for desktop.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
-![tafarika](/preview.png)
+![tafarikan](/preview.png)
